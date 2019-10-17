@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href="cssprueba.css">
+    </head>
+    <body>
+        
+        <div style="background-color: #e9e9e9"> <img src="./Imagenes/titulo.png"  alt="titulo"> </div>
+        <div class="topright">
+            <button  class="button" type="button" onclick="location.href='./login.jsp'">Iniciar sesion</button>
+            <button  class="button" type="button" onclick="location.href='./registro.jsp'">Registrarse</button>
+        </div>
+        
+        
+        <div class="topnav">
+            <a class="active" href="./index.jsp">Cartelera</a>
+            <a href="./estrenos.jsp">Estrenos</a>
+            <a href="#contact">Peliculas</a>
+            <a href="./descuentos.jsp">Descuentos</a>
+            <a href="./contacto.jsp">Sobre nosotros</a>
+            <input type="text" placeholder="Buscador..">
+        </div>
+        
+        <div>
+             <img class="c1" src="./Imagenes/c1.png" alt="c1.png">
+            <img class="c2"  src="./Imagenes/c2.png" alt="c2.png">
+        </div>
+        <div>
+            <img class="c1" style=" clear: both; margin-top: 6%" src="./Imagenes/c3.png" alt="c3.png">
+            <img class="c2" style=" clear: both ; margin-top: -19% ; margin-right: 9%" src="./Imagenes/c4.jpg" alt="c4.png">
+            
+        </div>
+        
+        <div class="contenedorlog">
+  
+            <div >
+                
+                <h2 class="tc">Nuevo registro</h2>
+                <form action="registro" method="post">
+                    <input class="lg" type="text" name="nombre" placeholder="nombre" required>
+                    <input class="lg" type="text" name="usuario" placeholder="Usuario" required>
+                    <input class="lg" type="password" name="contrasena" placeholder="Contraseña" required>
+                    <input class="lg" type="email" name="email" placeholder="Email" required>
+                    <p style="text-align: center ; margin-bottom: 5px ; margin-top: 5px">Fecha de nacimiento</p>
+                    <input style="width: 80% ; margin-left: 25px; padding: 5px " name="date" type="date" required> 
+                     <!--<textarea class="ta" placeholder="Escriba unos datos acerca de sus gustos"></textarea>-->
+                    <input  id="acceder" type="submit" value="Confirmar registro">
+                </form>
+            </div>
+                                  
+        </div>
+       
+    </body>
+</html>
